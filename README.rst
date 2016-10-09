@@ -1,3 +1,4 @@
+This is a fork of rainbow to enable case insensitive regex
 Rainbow
 =======
 
