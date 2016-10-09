@@ -178,7 +178,7 @@ def register_pattern_with_filter(pattern,filter_name):
     if pattern not in patterns:
         patterns[pattern] = { 'pattern_start': '',
                               'pattern_end': '',
-                              'regex' : re.compile(pattern) }
+                              'regex' : re.compile(pattern,re.IGNORECASE) }
 
     # Update the pattern before and after strings with the filter ones.
     patterns[pattern]['pattern_start'] += FILTERS[filter_name]['filter_start']
